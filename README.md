@@ -1,4 +1,20 @@
-<h1 align="center">Hi 👋, I'm Juan Muñoz</h1>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="200">
+  <defs>
+    <filter id="tetris">
+      <feFlood flood-color="#000000" result="black"/>
+      <feComposite in="SourceGraphic" in2="black" operator="in" result="mask"/>
+      <feMorphology in="mask" operator="dilate" radius="2" result="dilated"/>
+      <feTurbulence in="dilated" type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="1" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="10" xChannelSelector="R" yChannelSelector="G" result="displaced"/>
+      <feMerge>
+        <feMergeNode in="black"/>
+        <feMergeNode in="displaced"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" filter="url(#tetris)">JUAN IGNACIO MUÑOZ</text>
+</svg>
+
 <h3 align="center">¿Quién Soy? 👀 <div> <h1>Desarrollador Full Stack 💻</h1> <p>Mi orientacion es tanto como para Back End, cómo para Front End , soy 100% enseñable </p> <h2>¿Porqué yo?🤔</h2> <p>Conmigo no solo vas a obtener un desarrollador responsable, sino que vas a tener una persona hambrienta de conocimiento y muy proactiva, con la capacidad de resolución de problemas , liderazgo y sobre todo adaptabilidad a grupos de trabajo</p> <h2>Mi Experiencia Laboral⚙️🔧</h2> <p>Trabaje en l sector IT de Una Clinica Privada durante 1 año, estuve trabajando tanto en mantenimiento de redes, administracion y en desarrollo web de manera colaborativa paran la empresa que terciarizaba el la pagina de gestión para esta empresa.</p> <footer> <h3>¿Querés saber más de mi?🙌</h3> <p>Celular: +543874620059</p> <p><a href="mailto:juanignaciomunozok@gmail.com">juanignaciomunozok@gmail.com</a></p> </footer></h3>
 
 - 🔭 I’m currently working on **Proyecto Foods**
